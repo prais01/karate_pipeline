@@ -1,0 +1,18 @@
+name: prueba de automatizacion
+#ON: Este bloque define los eventos que activarán el flujo de trabajo.
+#En este caso, se activará cuando haya un push o una solicitud de extracción (pull request) en la rama principal (main).
+
+on:
+  push:
+    branches:
+      - feature/main
+
+#JOBS: Este bloque define los trabajos que se ejecutarán como parte del flujo de trabajo.
+#En este caso, hay un solo trabajo llamado "build" que se ejecutará en un entorno de Ubuntu más reciente (ubuntu-latest).
+jobs:
+  prueba-automatizacion:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: validar consola
+        run: echo "Hola, esta es una prueba de automatización en GitHub Actions"
