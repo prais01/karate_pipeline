@@ -5,7 +5,7 @@ name: prueba de automatizacion
 on:
   push:
     branches:
-      - feature/main
+    - main
 
 #JOBS: Este bloque define los trabajos que se ejecutarán como parte del flujo de trabajo.
 #En este caso, hay un solo trabajo llamado "build" que se ejecutará en un entorno de Ubuntu más reciente (ubuntu-latest).
